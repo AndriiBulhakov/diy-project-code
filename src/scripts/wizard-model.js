@@ -271,7 +271,7 @@ function initModel() {
 
   // DIY Scene v02 gltf scene import
 
-  gltfLoader.load('https://bitbucket.org/o0o0o0/diy-project-code/raw/94135c9cbc277b9a1a363310c9cf3e446f20ec77/src/static/diy_scene_v02/diy_scene_v02.gltf', (gltf) => {
+  gltfLoader.load('https://raw.githubusercontent.com/AndriiBulhakov/diy-project-code/main/src/static/diy_scene_v02/diy_scene_v02.gltf', (gltf) => {
     group.add(gltf.scene)
 
     gltf.scene.traverse((child) => {
@@ -333,7 +333,7 @@ function initModel() {
 
   // DIY Lights v02 import light parameters
 
-  gltfLoader.load('https://bitbucket.org/o0o0o0/diy-project-code/raw/94135c9cbc277b9a1a363310c9cf3e446f20ec77/src/static/diy_scene_v02/diy_lights_v02.gltf', (gltf) => {
+  gltfLoader.load('https://raw.githubusercontent.com/AndriiBulhakov/diy-project-code/main/src/static/diy_scene_v02/diy_lights_v02.gltf', (gltf) => {
     // export coordinates from the scene
     const infinityLight = gltf.scene.children[4]
     directionalLight.rotation.x = infinityLight.rotation.x
@@ -401,7 +401,7 @@ function initModel() {
   rectAreaLight01.rotation.x = -Math.PI / 2
 
   // import arealight01 position
-  gltfLoader.load('https://bitbucket.org/o0o0o0/diy-project-code/raw/94135c9cbc277b9a1a363310c9cf3e446f20ec77/src/static/diy_scene_v02/diy_lights_v02.gltf', (gltf) => {
+  gltfLoader.load('https://raw.githubusercontent.com/AndriiBulhakov/diy-project-code/main/src/static/diy_scene_v02/diy_lights_v02.gltf', (gltf) => {
     // export coordinates from the scene
     const areaLight = gltf.scene.children[2]
     rectAreaLight01.position.x = areaLight.position.x
@@ -447,7 +447,7 @@ function initModel() {
   rectAreaLight02.rotation.x = Math.PI / 2
 
   // import arealight02 position
-  gltfLoader.load('https://bitbucket.org/o0o0o0/diy-project-code/raw/94135c9cbc277b9a1a363310c9cf3e446f20ec77/src/static/diy_scene_v02/diy_lights_v02.gltf', (gltf) => {
+  gltfLoader.load('https://raw.githubusercontent.com/AndriiBulhakov/diy-project-code/main/src/static/diy_scene_v02/diy_lights_v02.gltf', (gltf) => {
     // export coordinates from the scene
     const areaLight = gltf.scene.children[2]
     rectAreaLight02.position.x = areaLight.position.x
